@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #020617;
+}
+
+header h1 {
+    color: #22c55e;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px;
+}
+
+h2 {
+    color: #22c55e;
+    margin-bottom: 15px;
+}
+
+.winner-card {
+    background: #020617;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #22c55e;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.winner-card h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.participants ul {
+    list-style: none;
+    padding: 0;
+}
+
+.participants li {
+    background: #020617;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.positive {
+    color: #22c55e;
+}
+
+.negative {
+    color: #f87171;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #020617;
+    color: #94a3b8;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Top Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #020617;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #22c55e;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #22c55e;
+}
+
+.signup-btn {
+    padding: 6px 12px;
+    border-radius: 5px;
+    background: #22c55e;
+    color: #020617 !important;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* later we add hamburger menu */
+    }
+}
